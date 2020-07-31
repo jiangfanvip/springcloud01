@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroServiceApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroServiceProviderDept-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroServiceProviderDept-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroServiceProviderDept-8003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroServiceProviderDept8001_hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microEurekaServer-7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microEurekaServer-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microEurekaServer-7003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microService-zuul-gateway-9527" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microServiceConsumerDept-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microServiceConsumerDept-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microServiceonsumer-hystrix-dashboard" charset="UTF-8" />
+  </component>
+</project>

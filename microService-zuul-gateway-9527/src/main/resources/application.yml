@@ -1,0 +1,30 @@
+server:
+  port: 9527   #zuul网关监听9527端口
+spring:
+  application:
+    name: microservicecloud-zuul-gateway  #注册到eureka的应用程序名
+ #zuul网关也注册到eureka server
+eureka:
+  client: #eureka客户端
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: gateway-9527.com    #注册到eureka的服务名
+    prefer-ip-address: true #
+
+
+zuul:
+
+  #ignored-services: microserviceprovider-dept #忽略这个应用程序名映射，让他不能通过zuul映射，必须通过指定映射规则访问
+  prefix: /springcloud      #给访问规则前添加前缀 比如去呗深圳和北京
+  ignored-services: "*" #忽略所有zuul这个对应eureka server下所有的微服务应用程序名映射，必须使用虚拟映射
+  routes:  #路由映射的配置
+    mydept.path: /mydept/**  #映射规则指定
+    mydept.serviceId: microserviceprovider-dept #被映射的微服务应用程序名，因为zuul网关路由映射前是通过应用程序名来访问
+
+
+info:
+  app.name:  jianfan-springcloud01
+  company.name: com.jiangfan
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
